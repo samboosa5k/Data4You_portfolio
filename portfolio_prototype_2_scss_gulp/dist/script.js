@@ -125,7 +125,7 @@ async function scrollIndicator() {
     return true;
 }
 
-function fillScrollPoints() {
+async function fillScrollPoints() {
     for ( var i = 0; i <= segments.length; i++ ) {
         scrollPoints.push( segments[i].offsetTop );
     }
@@ -222,9 +222,7 @@ window.onload = function () {
     getNewHeight();
     createSkillBubbles();
     scrollIndicator().then( scrollSphereHistory( true ) );
-    fillScrollPoints();
-
-    scrollHeightCheck();
+    fillScrollPoints().then( scrollHeightCheck() );
 }
 
 window.onscroll = function () {
