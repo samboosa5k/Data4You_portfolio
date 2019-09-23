@@ -24,12 +24,24 @@
     </header>
     <nav class="nav__menu" id="menu_id" style="display: none;">
         <ul>
-            <li class="menu__item">Empty</li>
-            <li class="menu__item">Home</li>
-            <li class="menu__item">Skills</li>
-            <li class="menu__item">Projects</li>
-            <li class="menu__item">About Me</li>
-            <li class="menu__item">Git & Linkedin</li>
+            <a>
+                <li class="menu__item">Empty</li>
+            </a>
+            <a href="#_home">
+                <li class="menu__item">Home</li>
+            </a>
+            <a href="#_skills">
+                <li class="menu__item">Skills</li>
+            </a>
+            <a href="#_projects">
+                <li class="menu__item">Projects</li>
+            </a>
+            <a href="#_aboutMe">
+                <li class="menu__item">About Me</li>
+            </a>
+            <a href="#_contact">
+                <li class="menu__item">Git & Linkedin</li>
+            </a>
         </ul>
     </nav>
 
@@ -38,19 +50,19 @@
             <div class="scroll-indicator__sphere"></div>
         </aside>
         <main class="main">
-            <section class="main__segment segment__home" style="height:0;">
+            <section id="_home" class="main__segment segment__home" style="height:0;">
                 <div class="home__title">
                     <h1 class="scrolly">Welcome to my web-development portfolio.</h1>
                     <p>Created with love &lt;3</p>
                 </div>
             </section>
-            <section class="main__segment main__skills">
+            <section id="_skills" class="main__segment main__skills">
                 <h2 class="scrolly">SKILLS</h2>
                 <p>This is my SKILLS content.</p>
                 <div class="skills__list">HTML CSS BOOTSTRAP JS JQUERY PHP LARAVEL WORDPRESS GIT PHOTOSHOP ILLUSTRATOR GOOGLE-ANALYTICS ADWORDS TAG-MANAGER</div>
             </section>
             <!-- PROJECTS -->
-            <section class="main__segment segment__projects">
+            <section id="_projects" class="main__segment segment__projects">
                 <div class="projects__title">
                     <h2 class="scrolly">PROJECTS</h2>
                     <p>This is my PROJECTS content.</p>
@@ -125,7 +137,7 @@
     </div>
 
 
-    <section class="main__segment aboutMe">
+    <section id="_aboutMe" class="main__segment aboutMe">
         <div class="aboutMe__2column">
             <div class="aboutMe__column aboutMe__Left">
             </div>
@@ -139,7 +151,7 @@
             </div>
         </div>
     </section>
-    <section class="contact">
+    <section id="_contact" class="contact">
         <h2 class="scrolly">GIT & LINKEDIN</h2>
         <p>This is my CONTACT content.</p>
         <div class="contact__icons">
