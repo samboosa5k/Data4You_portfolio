@@ -177,18 +177,13 @@ function scrollHeightCheck( param ) {
     if ( param == true ) { console.log( "Sphere color change initiated" ); }
 }
 
-
 function scrollSphereHistory( param ) {
     var scrollSpheres = Array.from( document.querySelector( "aside" ).children );
 
-    var filtered = scrollSpheres
-        .map( function ( curr, index ) {
-            if ( index <= lowestIndex ) return curr;
-        } )
-        .filter( function ( curr ) { return curr != undefined } );
+    scrollSpheres[0].classList.add( "scroll-indicator__sphere--active" );
 
-    for ( var i in filtered ) {
-        filtered[i].classList.add( "scroll-indicator__sphere--active" );
+    for ( var i = 0; i <= lowestIndex; i++ ) {
+        scrollSpheres[i].classList.add( "scroll-indicator__sphere--active" );
     }
 
     // Debugging:
