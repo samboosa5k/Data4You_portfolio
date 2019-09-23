@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jasper's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onresize="getNewHeight();">
+    <header class="header">
+        <div class="header__filler"></div>
+        <div class="header__logo">&lt;jasper_verbon/&gt;</div>
+        <div class="header__menuBtn">
+            <a href="javascript:void(0)" onclick="openmenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </div>
+    </header>
+    <nav class="nav__menu" id="menu_id" style="display: none;">
+        <ul>
+            <li class="menu__item">Empty</li>
+            <li class="menu__item">Home</li>
+            <li class="menu__item">Skills</li>
+            <li class="menu__item">Projects</li>
+            <li class="menu__item">About Me</li>
+            <li class="menu__item">Git & Linkedin</li>
+        </ul>
+    </nav>
+
+    <div class="main__wrapper">
+        <aside class="scroll-indicator">
+            <div class="scroll-indicator__sphere"></div>
+        </aside>
+        <main class="main">
+            <section class="main__segment segment__home" style="height:0;">
+                <div class="home__title">
+                    <h1 class="scrolly">Welcome to my web-development portfolio.</h1>
+                    <p>Created with love &lt;3</p>
+                </div>
+            </section>
+            <section class="main__segment main__skills">
+                <h2 class="scrolly">SKILLS</h2>
+                <p>This is my SKILLS content.</p>
+                <div class="skills__list">HTML CSS BOOTSTRAP JS JQUERY PHP LARAVEL WORDPRESS GIT PHOTOSHOP ILLUSTRATOR GOOGLE-ANALYTICS ADWORDS TAG-MANAGER</div>
+            </section>
+            <!-- PROJECTS -->
+            <section class="main__segment segment__projects">
+                <div class="projects__title">
+                    <h2 class="scrolly">PROJECTS</h2>
+                    <p>This is my PROJECTS content.</p>
+                </div>
+
+                <div class="projects__wrapper">
+                    <div class="projects__side" style="width: 0;"></div>
+                    <!-- <div class="projects__center" style="width: 0;"> -->
+                    <div class="projects__center">
+                        <div class=" wideThumb__wrapper">
+                            <div class="projects__wideThumb">
+                                <img src="img/pizza.png" alt="pizza">
+                            </div>
+                            <div class="projects__caption">
+                                Project 0: This portfolio was created during the 12-week Data4You bootcamp in Prague
+                            </div>
+
+                        </div>
+                        <div class="wideThumb__wrapper">
+                            <div class="projects__wideThumb">
+                                <img src="img/pizza.png" alt="pizza">
+                            </div>
+                            <div class="projects__caption">
+                                Project 1: This project has not been created and merely serves as a placeholder
+                            </div>
+
+                        </div>
+                        <div class="wideThumb__wrapper">
+                            <div class="projects__wideThumb">
+                                <img src="img/pizza.png" alt="pizza">
+                            </div>
+                            <div class="projects__caption">
+                                Project 2: This multi-user task list also hasn't been created, but it seems like a good idea
+                            </div>
+
+                        </div>
+                        <div class="wideThumb__wrapper">
+                            <div class="projects__wideThumb">
+                                <img src="img/pizza.png" alt="pizza">
+                            </div>
+                            <div class="projects__caption">
+                                Project 3: This online grocery-store was created by a figment of my imagination
+                            </div>
+
+                        </div>
+                        <div class="wideThumb__wrapper">
+                            <div class="projects__wideThumb">
+                                <img src="img/pizza.png" alt="pizza">
+                            </div>
+                            <div class="projects__caption">
+                                Project 4: Facebook, the notorious social network. I created it, but it was stolen from me by Mark.
+                            </div>
+
+                        </div>
+                        <!-- <div class="wideThumb__wrapper">
+                            <div class="projects__wideThumb">Image</div>
+                            <figcaption class="wideThumb__figCaption">Project 5: Text project hhehe</figcaption>
+                        </div> -->
+                        <div class="wideThumb__wrapper wideThumb__dummy-wrapper" style="visibility: hidden; height: 0;">
+                            <div class=" projects__wideThumb">
+                                <img src="img/pizza.png" alt="pizza">
+                            </div>
+                            <div class="projects__caption">
+                                Project 4: Facebook, the notorious social network. I created it, but it was stolen from me by Mark.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__side" style="width: 0;"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <section class="main__segment aboutMe">
+        <div class="aboutMe__2column">
+            <div class="aboutMe__column aboutMe__Left">
+            </div>
+            <div class="aboutMe__column aboutMe__Right">
+                <div>
+                    <h2 class="scrolly">ABOUT ME</h2>
+                    <p>Welcome to my humble web-development portfolio page, where you can see the projects I've completed and the ones I'm still working on.</p>
+                    <p>Having a digital-art and design background, I apply my keen eye for pretty colors and obsessive organization to create amazing websites!</p>
+                    <p>I also really love my dogs, and am passionate about Pizza, Belgian beer and Scottish whiskey.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <h2 class="scrolly">GIT & LINKEDIN</h2>
+        <p>This is my CONTACT content.</p>
+        <div class="contact__icons">
+            <div>
+                <img src="img/github-logo.svg" alt="github" class="github" onmouseover="contactHover(this);">
+                <div class="github__child"></div>
+            </div>
+            <div>
+                <img src="img/linkedin-logo-button.svg" alt="linkedin" class="linkedin" onmouseover="contactHover(this);">
+                <div class="linkedin__child"></div>
+            </div>
+            <div>
+                <img src="img/instagram-logo.svg" alt="instagram" class="instagram" onmouseover="contactHover(this);">
+                <div class="instagram__child"></div>
+            </div>
+        </div>
+    </section>
+    </main>
+    </div>
+    <footer class="footer">
+        By Jasper Verbon - Not copyrighted or protected in anyway.
+    </footer>
+</body>
+
+</html>

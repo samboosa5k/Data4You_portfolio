@@ -1,0 +1,49 @@
+header {
+    position: fixed;
+    width: 100vw;
+    height: 64px;
+    justify-content: space-between;
+    z-index: 999;
+    background-color: black;
+    border-bottom: 2px dotted black;
+    box-shadow: 0 8px purple;
+}
+
+header {
+    @include flex;
+    flex-wrap: nowrap;
+}
+
+.header {
+    &__logo {
+        font-size: 2rem;
+        color: white;
+    }
+
+    &__menuBtn {
+        @include flex;
+        flex-wrap: nowrap;
+
+        div {
+            width: 32px;
+            height: 4px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            margin-right: 16px;
+            background-color: white;
+        }
+
+        a {
+            padding-top: 32px;
+            padding-bottom: 32px;
+            /* padding-left: 16px; */
+        }
+    }
+
+    &__menu,
+    &__menuBtn,
+    &__filler {
+        height: 64px;
+        width: 64px;
+    }
+}

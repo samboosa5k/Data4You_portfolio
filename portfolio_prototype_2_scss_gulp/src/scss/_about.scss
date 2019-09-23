@@ -1,0 +1,35 @@
+.aboutMe {
+    padding: 0;
+
+    &__2column {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    &__column {
+        padding: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__Left {
+        background-image: url("../img/profile_pic.jpg");
+        background-size: cover;
+        min-height: 384px;
+        background-origin: border-box;
+        background-position: top 20% right 25%;
+    }
+
+    &__Right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__info {
+        display: inline-block;
+        background-color: white;
+    }
+}

@@ -1,0 +1,97 @@
+$breakpoint-single: 416px;
+
+$breakpoint-double: 768px;
+
+$breakpoint-triple: 1248px;
+
+@media (max-width: $breakpoint-single) {
+    .aboutMe {
+        &__2column {
+            flex-flow: column;
+        }
+    }
+
+    .wideThumb__wrapper {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .skills__list {
+        margin: 0;
+    }
+
+    .contact__icons {
+        flex-flow: column;
+    }
+}
+
+@media (min-width: $breakpoint-single) {
+    .aboutMe {
+        &__2column {
+            flex-flow: row;
+        }
+    }
+
+    .wideThumb__wrapper {
+        max-width: 90vw;
+    }
+}
+
+@media (min-width: #{$breakpoint-single}) and (max-width: #{$breakpoint-double}) {
+
+    .projects {
+        &__center {
+            width: 95vw;
+            justify-content: space-between;
+        }
+
+        &__side {
+            flex-grow: 1;
+        }
+
+    }
+
+    .wideThumb__wrapper {
+        min-width: 40vw;
+        max-width: 45vw;
+    }
+}
+
+@media (min-width: #{$breakpoint-double}) and (max-width: #{$breakpoint-triple}) {
+    .projects {
+        &__center {
+            /* width: 95vw; */
+            justify-content: space-between;
+            margin: 0rem 1rem 0rem 1rem;
+        }
+    }
+
+    .wideThumb__wrapper {
+        min-width: 25vw;
+        max-width: 29vw;
+    }
+}
+
+@media (min-width: #{$breakpoint-triple}) {
+    .projects {
+        &__center {
+            /* width: 98vw; */
+            justify-content: space-between;
+            margin: 0rem 1rem 0rem 1rem;
+        }
+    }
+
+    .wideThumb__wrapper {
+        /* min-width: 29vw; */
+        width: 30vw;
+    }
+
+}
+
+/* @media (min-width: $breakpoint-triple) {
+    .projects {
+        &__center {
+            width: 1248px;
+        }
+    }
+} */

@@ -1,0 +1,11 @@
+#############################################
+#   Features to add                         #
+#############################################
+
+1. responsive github/linkedin/instagram SVG's
+2. fix about me section
+3. scrollable floating side menu
+
+    Links:
+    1. https://plainjs.com/javascript/styles/get-and-set-scroll-position-of-an-element-26/
+    2. https://stackoverflow.com/questions/11805955/how-to-get-the-distance-from-the-top-for-an-element

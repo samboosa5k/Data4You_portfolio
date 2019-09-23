@@ -1,0 +1,81 @@
+.main__wrapper {
+    display: flex;
+    justify-content: center;
+
+    .scroll-indicator {
+        display: flex;
+        position: fixed;
+        top: 45vh;
+        left: 0;
+        width: 2rem;
+        height: 100vh;
+        flex-direction: column;
+
+        &__sphere {
+            /* Layout */
+
+            /* Dimensions */
+            width: .8rem;
+            height: .8rem;
+            margin: 1rem;
+            border-radius: 2rem;
+            background-color: cyan;
+            /* Visuals */
+            z-index: 999;
+            border: 0.1rem solid purple;
+
+            &--active {
+                background-color: magenta;
+            }
+        }
+    }
+}
+
+main {
+    @include flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main__segment {
+    width: 100%;
+    border-bottom: 2px dotted black;
+
+    h1 {
+        margin: 0;
+    }
+}
+
+.segment__home {
+    @include flex;
+    justify-content: center;
+    background-image: url("../img/dunky.svg"), linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 50%, rgba(255, 255, 255, 0) 100%);
+    ;
+    background-position: right 25% top 0;
+    background-size: contain;
+    text-align: center;
+    ;
+
+    .home__title {
+        @include flex;
+        flex-flow: column;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 4rem;
+        box-shadow: 0 8px white;
+        text-shadow: 0 3px .5px #000;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+    }
+
+    p {
+        padding: 0.5rem;
+        margin-top: 2rem;
+        font-size: 1.25rem;
+        /* Visuals */
+        background-color: black;
+        color: white;
+    }
+}

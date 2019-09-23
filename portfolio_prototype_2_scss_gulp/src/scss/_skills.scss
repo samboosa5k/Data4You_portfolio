@@ -1,0 +1,23 @@
+.main__skills {
+    padding: 32px;
+}
+
+.skills {
+    &__list {
+        margin-left: 10vw;
+        margin-right: 10vw;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__bubble {
+        font-size: 1rem;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        color: white;
+        box-shadow: 0 8px purple;
+        background-color: black;
+        border-radius: 1rem;
+    }
+}

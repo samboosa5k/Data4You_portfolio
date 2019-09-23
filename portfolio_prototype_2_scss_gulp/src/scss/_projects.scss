@@ -1,0 +1,80 @@
+.projects {
+    &__wrapper {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+
+    &__side {
+        /* flex-grow: 1; */
+    }
+
+    &__center {
+        /* width: 416px; */
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-grow: 0; */
+    }
+
+    &__title {
+        padding-top: 32px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    &__wideThumb {
+        /* min-width: 384px;
+        max-width: 384px;
+        min-height: 192px; 
+        background-color: white;*/
+        height: 192px;
+        box-shadow: 0 2px;
+
+        img {
+            height: 100%;
+            opacity: 0.5;
+            width: 100%;
+        }
+    }
+
+    &__caption {
+        padding: 0.5rem;
+        /* max-width: 384px; */
+        height: 4rem;
+        /* transform: translateY(192px); */
+        color: white;
+        background-color: #800080c4;
+        border-bottom: 0.1rem solid magenta;
+        word-wrap: break-word;
+    }
+}
+
+.wideThumb {
+    &__wrapper {
+        /* min-width: 384px;
+        max-width: 384px;
+        */
+        min-height: 192px;
+        height: auto;
+        margin-top: 1rem;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        background-color: white;
+        border-bottom: 0.5rem solid black;
+        border-top: 0.2rem solid purple;
+        border-radius: 0 1rem;
+        overflow: hidden;
+
+        &--hidden {
+            visibility: hidden;
+        }
+
+        &--none {
+            display: none;
+        }
+    }
+
+    &__dummy-wrapper {
+        min-height: 0;
+    }
+
+}

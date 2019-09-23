@@ -1,0 +1,80 @@
+@keyframes fade {
+    0% {
+        background-color: black;
+    }
+
+    40% {
+        background-color: purple;
+    }
+
+    100% {
+        background-color: purple;
+    }
+}
+
+@keyframes dropdown {
+    0% {
+        transform: translateY(-100%);
+        background-color: black;
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes goUp {
+    0% {
+        transform: translateY(0);
+        background-color: black;
+        display: none;
+    }
+
+    100% {
+        transform: translateY(-100%);
+        display: inline-block;
+    }
+}
+
+
+@keyframes underbar {
+    0% {
+        width: 1rem;
+        height: 0;
+        border-bottom: 0.2rem solid black;
+    }
+
+    50% {
+        height: 0;
+        border-bottom: 0.2rem solid purple;
+    }
+
+    100% {
+        width: 5rem;
+        height: 0;
+        border-bottom: 0.2rem solid magenta;
+        box-shadow: 0 1rem 0.4rem black;
+    }
+}
+
+
+.nav__menu {
+    &--active {
+        display: inline-block;
+        position: fixed;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-name: dropdown;
+    }
+
+    &--collapsed {
+        display: inline-block;
+        position: fixed;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-direction: normal;
+        animation-name: goUp;
+        animation-fill-mode: forwards;
+    }
+}

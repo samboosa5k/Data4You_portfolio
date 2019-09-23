@@ -1,0 +1,379 @@
+/* Sources of help:
+https://css-tricks.com/a-couple-of-use-cases-for-calc/
+https://css-tricks.com/couple-takes-sticky-footer/
+*/
+
+/* 
+################################
+# GLOBAL                       #
+################################
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+/* Make screen always 100% */
+body, 
+html { 
+  font-size: 16px;
+  width:100%; 
+  height:100%; 
+  padding: 0; 
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: Gainsboro;
+}
+
+/* body {
+  font-size: 18px;
+} */
+
+/* 
+################################
+# HEADER                       #
+################################
+*/
+
+
+header {
+  position: relative;
+  height: 64px;
+  justify-content: space-between;
+  /* Z-index is essential */
+  z-index: 999;
+  background-color: black;
+  border-bottom: 2px dotted black;
+  box-shadow: 0 8px purple;
+}
+
+header,
+.header__menuBtn {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 2rem;
+  color: white;
+}
+
+.header__menu,
+.header__menubtn,
+.header__filler {
+  height: 64px;
+  width: 64px;
+}
+
+.header__menuBtn div {
+  width: 32px;
+  height: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  background-color: white;
+}
+
+.header__menuBtn a {
+  padding-top: 32px; 
+  padding-bottom: 32px; 
+  padding-left: 16px;
+}
+
+/* 
+################################
+# MENU                         #
+################################
+*/
+
+
+nav {
+  background-color: black;
+}
+
+nav > ul {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.nav__menu {
+  display: none;
+  /* Box model */
+  width: 100%;
+  height: auto;
+    
+}
+
+.nav__menu li {
+  line-height: 1.5rem;
+  list-style-type: none;
+  border-bottom: 2px dotted purple;
+}
+
+.menu__item {
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 1.25rem;
+}
+
+/* 
+################################
+# MAIN                         #
+################################
+*/
+.main__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.main__segment {
+  width: 100%;
+  border-bottom: 2px dotted black;
+}
+
+.main__segment h1 {
+  margin: 0;
+}
+
+/* 
+################################
+# HOME                         #
+################################
+*/
+
+.segment__home {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../img/dunky.jpg");
+  background-position: right 25% top 0;
+  background-size: cover;
+  /* Typography */
+  text-align: center;
+}
+
+.segment__home p {
+  margin: 0;
+  font-size: 4rem;
+  box-shadow: 0 8px white;
+  text-shadow: 0 3px 0.5px white;
+}
+
+/* 
+################################
+# SKILLS                       #
+################################
+*/
+
+.main__skills {
+  padding: 32px;
+}
+
+.skills__list {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skills__bubble {
+  font-size: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+  box-shadow: 0 8px purple;
+  background-color: black;
+  border-radius: 1rem;
+}
+
+/* 
+################################
+# PROJECTS                     #
+################################
+*/
+
+.projects__wrapper {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.projects__center {
+  width: 832px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wideThumb__wrapper {
+  /* width: 100%; */
+  height: auto;
+
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.project__wideThumb {
+  min-width: 384px;
+  max-width: 384px;
+  min-height: 192px;
+  background-color: white;
+  box-shadow: 0 2px; 
+}
+
+.wideThumb__figCaption {
+  padding: 0.5rem;
+  position: absolute;
+  transform: translatey(-2rem);
+}
+
+.projects__title {
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* 
+################################
+# ABOUT ME                     #
+################################
+*/
+
+.main__aboutMe {
+  padding: 0;
+}
+
+.main__2column {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.aboutMe__column {
+  padding: 1rem;
+  margin-left: auto ;
+  margin-right: auto ;
+  width: 100%;
+  text-align: center;
+}
+
+.aboutMe__Left {
+  background-image: url("../img/profile_pic.jpg");
+  background-size: cover;
+  height: 512px;
+  background-origin: border-box;
+  background-position: top 20% right 25%;
+}
+
+.aboutMe__Right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutMe__info {
+  display: inline-block;
+  background-color: white;
+}
+
+/* 
+################################
+# GITHUB & CONTACT             #
+################################
+*/
+.main__contact {
+  padding: 32px;
+}
+
+.contact__icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+}
+
+.contact__icons img {
+  width: 8rem;
+  margin: 2rem;
+}
+
+/* 
+################################
+# FOOTER                       #
+################################
+*/
+
+footer {
+  padding: 0.33rem;
+  height: 32px;
+  background-color: silver;
+  text-align: center;
+}
+
+/* 
+################################
+# ANIMATION                    #
+################################
+*/
+
+/* MENU - ANIMATION */
+
+@keyframes dropdown {
+  0% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    background-color: black;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes goUp {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background-color: black;
+    display: none;
+  }
+  100% {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    display: inline-block;
+  }
+}
+
+.nav__menu--active {
+  /* Visual */
+  display: inline-block;
+  position: fixed;
+  /* Animation */
+  animation-name: dropdown;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-direction: normal;  
+}
+
+.nav__menu--collapsed {
+  /* Visual */
+  display: inline-block;
+  position: fixed;
+  /* Animation */
+  animation-name: goUp;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-direction: normal;  
+  animation-fill-mode: forwards;
+}
+
+

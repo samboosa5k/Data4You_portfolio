@@ -1,0 +1,38 @@
+nav {
+    background-color: black;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        color: white;
+    }
+}
+
+.nav__menu {
+    display: none;
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    /* transform: translateY(74px); */
+
+    li {
+        line-height: 1.5rem;
+        list-style-type: none;
+        border-bottom: 2px dotted purple;
+
+        &:hover {
+            background-color: purple;
+            animation-name: fade;
+            animation-duration: 1s;
+            animation-delay: 0s;
+            animation-direction: normal;
+        }
+    }
+}
+
+.menu__item {
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 1.25rem;
+}

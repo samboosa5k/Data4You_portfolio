@@ -1,0 +1,36 @@
+{
+  "name": "portfolio_prototype_2_scss_gulp",
+  "version": "1.0.0",
+  "description": "Portfolio prototype reworked with scss and gulp",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "scripts": {
+    "test": "node -v"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samboosa5k/Data4You.git"
+  },
+  "keywords": [
+    "gulp",
+    "scss",
+    "node",
+    "npm"
+  ],
+  "author": "Jasper Verbon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samboosa5k/Data4You/issues"
+  },
+  "homepage": "https://github.com/samboosa5k/Data4You#readme"
+}

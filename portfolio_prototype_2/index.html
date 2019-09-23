@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Jasper's Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body onresize="getNewHeight();" onload="getNewHeight(); createSkillBubbles()">
+    <header class="header">
+        <div class="header__filler"></div>
+        <div class="header__logo">LOGO - JASPER'S PORTFOLIO</div>
+        <div class="header__menuBtn">
+            <a href="#" onclick="openmenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </div>
+    </header>
+    <nav class="nav__menu" id="menu_id">
+        <ul>
+            <li class="menu__item">Home</li>
+            <li class="menu__item">Skills</li>
+            <li class="menu__item">Projects</li>
+            <li class="menu__item">About Me</li>
+            <li class="menu__item">Git & Linkedin</li>
+        </ul>
+    </nav>
+
+    <div class="main__wrapper">
+        <main class="main">
+            <section class="main__segment segment__home" style="height:0;">
+                <div>
+                    <h1>
+                        &lt;jasper's_portfolio/&gt;
+                    </h1>
+                    <p>You just came to the site of a</p>
+                    <p>web-development legend</p>
+                    <h4>Designed for a mobile/fullscreen image.</h4>
+                </div>
+            </section>
+            <section class="main__segment main__skills">
+                <h1>SKILLS</h1>
+                <p>This is my SKILLS content.</p>
+                <div class="skills__list">HTML CSS BOOTSTRAP JS JQUERY PHP LARAVEL WORDPRESS GIT PHOTOSHOP ILLUSTRATOR GOOGLE-ANALYTICS ADWORDS TAG-MANAGER</div>
+            </section>
+            <!-- PROJECTS -->
+            <section class="main__segment segment__projects">
+                <div class="projects__title">
+                    <h1>PROJECTS</h1>
+                    <p>This is my PROJECTS content.</p>
+                </div>
+
+                <div class="projects__wrapper">
+                    <div class="projects__side" style="width: 0;"></div>
+                    <div class="projects__center" style="width: 0;">
+                        <div class=" wideThumb__wrapper">
+                            <div class="project__wideThumb">Image</div>
+                            <figcaption class="wideThumb__figCaption">Project 0: This portfolio</figcaption>
+                        </div>
+                        <div class="wideThumb__wrapper">
+                            <div class="project__wideThumb">Image</div>
+                            <figcaption class="wideThumb__figCaption">Project 1: T.B.D</figcaption>
+                        </div>
+                        <div class="wideThumb__wrapper">
+                            <div class="project__wideThumb">Image</div>
+                            <figcaption class="wideThumb__figCaption">Project 2: Multi-user task-list</figcaption>
+                        </div>
+                        <div class="wideThumb__wrapper">
+                            <div class="project__wideThumb">Image</div>
+                            <figcaption class="wideThumb__figCaption">Project 3: Online grocery store</figcaption>
+                        </div>
+                        <div class="wideThumb__wrapper">
+                            <div class="project__wideThumb">Image</div>
+                            <figcaption class="wideThumb__figCaption">Project 4: Minimal social network</figcaption>
+                        </div>
+                    </div>
+                    <div class="projects__side" style="width: 0;"></div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <section class="main__segment main__aboutMe">
+        <div class="main__2column">
+            <div class="aboutMe__column aboutMe__Left">
+            </div>
+            <div class="aboutMe__column aboutMe__Right">
+                <div>
+                    <h1>ABOUT ME</h1>
+                    <p>This is my ABOUT ME content.</p>
+                    <p>Random information about me, will be updated a.s.a.p.</p>
+                    <p>I love my dogs.</p>
+                    <p>I love food, and in particular: pizza.</p>
+                    <p>Beer & whiskey lover.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main__contact">
+        <h1>GIT & LINKEDIN</h1>
+        <p>This is my CONTACT content.</p>
+        <div class="contact__icons">
+            <img src="img/github-logo.svg" alt="alternative_image_text">
+            <img src="img/linkedin-logo-button.svg" alt="alternative_image_text">
+            <img src="img/instagram-logo.svg" alt="alternative_image_text">
+        </div>
+    </section>
+    </main>
+    </div>
+    <footer class="footer">
+        By Jasper Verbon - Not copyrighted or protected in anyway.
+    </footer>
+</body>
+
+</html>
